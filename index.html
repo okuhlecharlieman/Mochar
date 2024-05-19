@@ -3,50 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brick Ceiling Business</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Building Materials Business</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/">
 </head>
 <body>
-    <header class="bg-primary text-white p-3">
-        <div class="container">
-            <h1 class="text-center">Brick Ceiling Solutions</h1>
-        </div>
-    </header>
-
+    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Home</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="services.html">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
+        <a class="navbar-brand" href="#">Building Materials</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#products">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
         </div>
     </nav>
 
-    <main class="container py-5">
-        <h2>Welcome to Brick Ceiling Solutions</h2>
-        <p>We specialize in providing high-quality brick ceiling installations and renovations.<br> Our team of experts is dedicated to delivering exceptional service and craftsmanship to every project.</p>
-    </main>
+    <!-- Header Section -->
+    <header class="jumbotron text-center">
+        <h1 class="display-4">Quality Building Materials</h1>
+        <p class="lead">Bricks, Sand, Cement, and more!</p>
+        <a href="#products" class="btn btn-primary btn-lg">Our Products</a>
+    </header>
 
-    <footer class="bg-light text-center py-3">
-        <p>&copy; 2024 Brick Ceiling Business. All rights reserved.</p>
+    <!-- About Us Section -->
+    <section id="about" class="container my-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>About Us</h2>
+                <p>We provide high-quality building materials for your construction needs.</p>
+            </div>
+            <div class="col-lg-6">
+                <!-- <img src="/img/contact-image.jpg" alt="About Us" class="img-fluid"> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="container my-5">
+        <h2 class="text-center">Our Products</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="/img/contact-image.jpg" class="card-img-top" alt="Bricks">
+                    <div class="card-body">
+                        <h5 class="card-title">Bricks</h5>
+                        <p class="card-text">High-quality bricks for your building projects.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="/img/contact-image.jpg" class="card-img-top" alt="Sand">
+                    <div class="card-body">
+                        <h5 class="card-title">Sand</h5>
+                        <p class="card-text">Clean, fine sand for construction and landscaping.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="img/contact-image.jpg" class="card-img-top" alt="Cement">
+                    <div class="card-body">
+                        <h5 class="card-title">Cement</h5>
+                        <p class="card-text">Strong and durable cement for various construction needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container my-5">
+        <h2 class="text-center">Contact Us</h2>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+        <p>&copy; 2024 Building Materials Business. All rights reserved.</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
